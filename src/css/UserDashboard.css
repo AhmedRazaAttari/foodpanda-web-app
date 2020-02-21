@@ -1,0 +1,374 @@
+*{
+    color: rgb(253, 244, 244);
+}
+
+.header{
+    background-image: linear-gradient(to right, rgb(240, 77, 77) , rgb(238, 116, 46));
+    padding: 30px;
+    font-size: 18px;
+    text-align: center;
+    box-shadow: inset 0px -3px 1px 1px #f1ebeb;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Navbar{
+    transition-delay: 2s;
+    width: 57vh;
+    height: 100%;
+    background-image: linear-gradient(to right, rgb(119, 112, 112) , rgb(53, 51, 50));
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+}
+.Navbar ul li{
+    list-style: none;
+    width: 57vh;
+    height: 45px;
+    text-align: center;
+    border: 1px solid white;
+    line-height: 45px;
+}
+.Navbar ul li a{
+    text-decoration: none;
+}
+.Navbar ul li:hover{
+    background: grey;
+}
+
+.Rest_List{
+    padding: 15px;
+}
+.OnlyForColor{
+    color: black;
+}
+.Choice_food{
+    padding: 15px;
+    color: black;
+}
+.Top_restaurant{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    width: 52vh;
+    overflow: scroll;
+}
+.Top_restaurant::-webkit-scrollbar { 
+    display: none;
+}
+.Top_restaurant .upperDiv{
+    margin: 10px;
+}
+.imageStyle{
+    width : 250px;
+    height : 120px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.iconDiv{
+    width : 40px;
+    height: 40px;
+    border-Radius : 50%;
+    background: rgb(247, 120, 80);
+    line-Height: 40px;
+    text-Align: center;
+}
+.detail{
+    padding: 10px;
+    width: 220px;
+    margin-top: -5px;
+    background: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 2px 6px 12px 0px #d6d6cf;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+}
+.detail div b+small{
+    color: black;
+}
+.Top_Food{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    width: 52vh;
+    overflow: scroll;
+}
+.Top_Food::-webkit-scrollbar { 
+    display: none;
+}
+.foodImages{
+    width : 110px;
+    height : 100px;
+    border-radius: 10px;
+}
+.ImgDiv{
+    margin: 10px;
+}
+.filter{
+    width: 50vh;
+}
+.head{
+    height: 5vh;
+    line-height: 5vh;
+    width: 50vh;
+    background: rgb(243, 114, 75);
+    padding: 15px;
+    padding-left: 25px;
+    box-shadow: 2px 2px 18px 4px #777171;
+    border-bottom: 3px solid black;
+}
+
+.Footer ul{
+    background-image: linear-gradient(to left, rgb(243, 70, 70) , rgb(238, 50, 44));
+    padding-bottom: 15px;
+    padding-top: 15px;
+    /* min-width: 50vh; */
+    width: 100%;
+    font-size: 19px;
+    max-width: auto;
+    position: fixed;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    bottom: 0;
+}
+.Restaurant_List{
+    /* height: 66vh;
+    overflow: scroll; */
+    width: 53vh;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+/* .Restaurant_List::-webkit-scrollbar { 
+    display: none;
+} */
+
+.footer{
+    height: 8vh;
+    /* line-height: 5vh; */
+    width: 56vh;
+    background: rgb(243, 114, 75);
+    padding: 15px;
+    border: none;
+    position: fixed;
+    bottom: 0;
+}
+input[type="checkbox"] {
+    position: absolute;
+    left: -9999px;
+  }
+  
+  input[type="checkbox"]+label {
+    position: relative;
+    padding: 3px 0 0 40px;
+    cursor: pointer;
+  }
+  
+  input[type="checkbox"]+label:before {
+    content: '';
+    background: #fff;
+    border: 2px solid #1cbe9d;
+    border-radius: 3px;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  input[type="checkbox"]+label:after {
+    content: '';
+    border-style: solid;
+    border-width: 0 0 2px 2px;
+    border-color: transparent transparent #1cbe9d #1cbe9d;
+    width: 15px;
+    height: 8px;
+    position: absolute;
+    top: 6px;
+    left: 5px;
+    opacity: 0;
+    transform: scale(2) rotate(-45deg);
+    transition: transform 0.3s linear, opacity 0.3s linear;
+  }
+  
+  input[type="checkbox"]:checked+label:after {
+    opacity: 1;
+    transform: scale(1) rotate(-45deg);
+  }
+  
+  .Body{
+    width: 100%;
+    padding: 12px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+  
+  .Body .mainDiv{
+    box-shadow: 0px 0px 10px 2px #fde9e9;
+    padding: 7px;
+    padding-bottom: 12px;
+    width: 100%;
+    border-radius: 5px;
+    padding-left: 10px;
+  }
+
+
+.range-container {
+    position: relative;
+  }
+  
+  input[type=range] {
+    width: 300px;
+    margin: 18px 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+         appearance: none;
+  }
+  
+  input[type=range] + label {
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    padding: 5px 0;
+    position: absolute;
+    left: 110px !important;
+    text-align: center;
+    width: 80px;
+  }
+  
+  input[type=range]:active {
+    outline: none;
+  }
+  
+  input[type=range]::-webkit-slider-runnable-track {
+    -webkit-animation: 0.2s;
+            animation: 0.2s;
+    background-color: #121212;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    height: 7.5px;
+  }
+  
+  input[type=range]::-webkit-slider-thumb {
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 1px solid #121212;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin-top: -7px;
+    -webkit-appearance: none;
+            appearance: none;
+  }
+  
+  input[type=range]:active::-webkit-slider-runnable-track {
+    opacity: 0.8;
+  }
+  
+  input[type=range]::-moz-range-thumb {
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 1px solid #121212;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    -moz-appearance: none;
+         appearance: none;
+  }
+  
+  input[type=range]::-moz-range-track {
+    animation: 0.2s;
+    background-color: #121212;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    height: 7.5px;
+  }
+  
+  input[type=range]::-ms-thumb {
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 1px solid #121212;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: 0;
+    box-sizing: border-box;
+    appearance: none;
+  }
+  
+  input[type=range]::-ms-track {
+    animation: 0.2s;
+    background-color: #121212;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    height: 7.5px;
+  }
+  
+  input[type=range]::-moz-range-thumb {
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 1px solid #121212;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+  }
+  
+  input[type=range]:active::-ms-fill-lower {
+    background-color: #121212;
+  }
+  
+  input[type=range]:active::-ms-fill-upper {
+    background-color: #121212;
+  }
+
+  td{
+    padding: 5px;
+  }
